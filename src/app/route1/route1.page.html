@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>This is page 1</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-list>
+          <ion-item>
+            <ion-label>
+              Enter Name:
+            </ion-label>
+            <ion-input [(ngModel)] = "name"  placeholder="Enter your name"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-button slot="end" (click)="next(name)">Next</ion-button>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+

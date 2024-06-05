@@ -1,0 +1,144 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>GOLOYA POGI</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <h1>Button</h1>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-label>Default Button</ion-label>
+        <ion-button expand="{{ expand }}">My Button1</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-label>Expand (Block)</ion-label>
+        <ion-button expand="block" (click)="expand_block()">Block</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-label>Expand (Block)</ion-label>
+        <ion-button expand="full" (click)="expand_full()">Full</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-label>Shape (Round)</ion-label>
+        <ion-button shape="round" (click)="expand_shape()">Round</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-label>Fill (clear)</ion-label>
+        <ion-button fill="clear" (click)="expand_clear()">Fill</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-label>Fill (outline)</ion-label>
+        <ion-button fill="outline"  (click)=" expand_outline()">Fill</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-label>Fill (Solid)</ion-label>
+        <ion-button fill="solid" (click)="expand_solid()">Fill</ion-button>
+      </ion-col>
+    </ion-row>
+
+
+    <ion-row>
+      <ion-col>
+        <ion-label>RESIZE ME</ion-label>
+        <ion-button size="{{ size }}">Resize Me</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-label>Size (small)</ion-label>
+        <ion-button size="small" (click)="size_small()">Size</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-label>Size (large)</ion-label>
+        <ion-button size="large" (click)="size_large()">Size</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-label>Size (default)</ion-label>
+        <ion-button size="default" (click)="size_default()">Size</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-label>Default Button</ion-label>
+        <ion-button color="{{ color }}">My Button1</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <!--
+    <ion-row>
+      <ion-col>
+        <ion-label>Color (Primary)</ion-label>
+        <ion-button color="danger" (click)="color_danger()">color</ion-button>
+      </ion-col>
+    </ion-row>
+    -->
+
+    <ion-row>
+      <ion-col>
+        <ion-label>Color (Secondary)</ion-label>
+        <ion-button color="secondary" (click)="color_secondary()">color</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-label>Color (Tertiary)</ion-label>
+        <ion-button color="tertiary" (click)="color_tertiary()">color</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-label>Color (danger)</ion-label>
+        <ion-button color="danger" (click)="color_danger()">color</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-label>Color (warning)</ion-label>
+        <ion-button color="warning" (click)="color_warning()">color</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-label>Color (light)</ion-label>
+        <ion-button color="light" (click)="color_light()">color</ion-button>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+</ion-content>

@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title> Hello {{name}} </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!--<ion-button [routerLink]="['/route1']">Go back to Page 1</ion-button>-->
+  <ion-item>
+  
+    <ion-list>
+      <ion-item>
+        <ion-label>
+          Enter your age:
+        </ion-label>
+        <ion-input [(ngModel)] = "age"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-button slot="end" (click)="next(age)">Go</ion-button>
+        <ion-button slot="start" (click)="return()">Back</ion-button>
+      </ion-item>
+    </ion-list>
+  </ion-item>
+</ion-content>
+
+

@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>activity3 GOLOYA-POGI</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button (click) ="open_action_sheet()">
+    Open Action Sheet
+  </ion-button>
+
+  <ion-list>
+
+    <ion-item>
+      <ion-label>
+        Enter 1sT Number
+      </ion-label>
+      <ion-input placeholder="First Number" [(ngModel)]="no1">
+      </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>
+        Enter 2nd Number
+      </ion-label>
+      <ion-input placeholder="Second Number" [(ngModel)]="no2">
+      </ion-input>
+    </ion-item>
+
+  </ion-list>
+
+  <ion-item>
+    <ion-label>
+      Result:
+    </ion-label>
+    <ion-input type="number"readonly [(ngModel)] = "result">
+    </ion-input>
+  </ion-item>
+  
+</ion-content>

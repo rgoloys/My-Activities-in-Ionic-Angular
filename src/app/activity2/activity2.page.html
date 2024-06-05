@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>activity2-Calculator</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label>
+        Enter Number 1:
+      </ion-label>
+      <ion-input placeholder="No. 1" [(ngModel)]="no1"></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label>
+        Enter Number 2:
+      </ion-label>
+      <ion-input type="numer" placeholder="No.2" [(ngModel)]="no2"></ion-input>
+    </ion-item>
+
+  </ion-list>
+  <ion-button color="success" (click)="add()">Add</ion-button>
+  <ion-button color="warning" (click)="subtract()">Substract</ion-button>
+  <ion-button color="danger" (click)="multiply()">Multiply</ion-button>
+  <ion-button color="light" (click)="devide()">Devide</ion-button>
+
+
+  <ion-item>
+    <ion-label>
+      Result:
+    </ion-label>
+    <ion-input type="number" readonly [(ngModel)] = "result"></ion-input>
+  </ion-item>
+  
+
+</ion-content>

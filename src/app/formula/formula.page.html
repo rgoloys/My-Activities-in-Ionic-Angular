@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>formula</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-list>
+          <ion-item>
+            <ion-label>
+              Name:{{  data }}
+            </ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>
+              Address:{{ address }}
+            </ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>
+              Day of Work:
+            </ion-label>
+            <ion-input [(ngModel)] = "day_work"  placeholder="Enter Day of Work:"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label>
+              Salary per Day:
+            </ion-label>
+            <ion-input [(ngModel)] = "salary_day"  placeholder="Enter Salary per Day:"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label>
+              Deduction:
+            </ion-label>
+            <ion-input [(ngModel)]="deduction" placeholder="Enter Deduction"></ion-input>
+          </ion-item>
+
+
+          <ion-item>
+            <ion-button slot="start" color="danger" (click)="cancel_modal()">Cancel</ion-button>
+            <ion-button color="primary" slot="end"  (click)="ok_modal()">Ok</ion-button>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
